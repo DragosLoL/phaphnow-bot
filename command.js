@@ -18,9 +18,9 @@ function respond() {
 }
 
 function postMessage() {
-  var botResponse, options, body, botReq;
+  var bottwoResponse, options, body, botReq;
 
-  botResponse = "Not Here.";
+  bottwoResponse = "Not Here.";
 
   options = {
     hostname: 'api.groupme.com',
@@ -30,10 +30,10 @@ function postMessage() {
 
   body = {
     "bot_id" : botID,
-    "text" : botResponse
+    "text" : bottwoResponse
   };
 
-  console.log('sending ' + botResponse + ' to ' + botID);
+  console.log('sending ' + bottwoResponse + ' to ' + botID);
 
   botReq = HTTPS.request(options, function(res) {
       if(res.statusCode == 202) {
