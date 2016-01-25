@@ -19,9 +19,9 @@ function respond() {
 }
 
 function postMessage() {
-  var botResponse, options, body, botReq;
+  var options, body, botReq;
 
-  botResponse = "You're Dumb";
+  //botResponse = cool();
 
   options = {
     hostname: 'api.groupme.com',
@@ -31,7 +31,7 @@ function postMessage() {
 
   body = {
     "bot_id" : botID,
-    "text" : botResponse
+    "text" : "You're Dumb"
   };
 
   console.log('sending ' + botResponse + ' to ' + botID);
