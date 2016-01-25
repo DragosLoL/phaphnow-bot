@@ -1,5 +1,5 @@
 var HTTPS = require('https');
-var cool = require('cool-ascii-faces');
+// cool = require('cool-ascii-faces');
 
 var botID = process.env.BOT_ID;
 
@@ -19,9 +19,9 @@ function respond() {
 }
 
 function postMessage() {
-  var options, body, botReq;
+  var botResponse, options, body, botReq;
 
-  //botResponse = cool();
+  botResponse = cool();
 
   options = {
     hostname: 'api.groupme.com',
@@ -31,7 +31,7 @@ function postMessage() {
 
   body = {
     "bot_id" : botID,
-    "text" : "You're Dumb"
+    "text" : botResponse
   };
 
   console.log('sending ' + botResponse + ' to ' + botID);
